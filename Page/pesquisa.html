@@ -1,0 +1,1260 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+  <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <base href="https://www.periodicos.capes.gov.br/index.php/acervo/buscador.html" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Buscar assunto</title>
+	<link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    rel="stylesheet"
+  >
+	<link href="/templates/periodicos_v3/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="https://www.periodicos.capes.gov.br/components/com_pbuscador/assets/css/main.css" rel="stylesheet" type="text/css" />
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"89bd634c88d16ddd5965c6353e8bcd4d","system.paths":{"root":"","base":""}}</script>
+	<script src="/media/system/js/mootools-core.js?cb1ae95a905a493ad12abcc2b4846441" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?cb1ae95a905a493ad12abcc2b4846441" type="text/javascript"></script>
+	<script src="https://www.periodicos.capes.gov.br/components/com_pbuscador/assets/js/recording.js" type="text/javascript"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="/templates/periodicos_v3/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/templates/periodicos_v3/css/multi-select.css" media="screen" type="text/css">
+    <link rel='stylesheet' href='/templates/periodicos_v3/lib/fullcalendar/lib/main.css'>
+    <link rel="stylesheet" href="/templates/periodicos_v3/lib/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/templates/periodicos_v3/lib/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="/templates/periodicos_v3/lib/bootstrap-datepicker/css/bootstrap-datepicker.css">
+    <link rel="search" href="/" title="Buscar neste site" />
+
+    <link rel="stylesheet" type="text/css" href="/templates/periodicos_v3/css/bootstrap-drawer.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="/templates/periodicos_v3/lib/select2/4.1.0/css/select2.min.css">
+    <link rel="stylesheet" href="/templates/periodicos_v3/lib/select2-bootstrap4-theme/css/select2-bootstrap4.css">
+
+
+    <meta name="theme-color" content="#1c1c5c" />
+    <link rel="stylesheet" href="/templates/periodicos_v3/css/main.css" />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/templates/periodicos_v3/js/jquery-3.6.0.min.js"></script>
+    <script src="/templates/periodicos_v3/lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="/templates/periodicos_v3/lib/popper/1.14.3/js/popper.min.js"></script>
+    <script src="/templates/periodicos_v3/lib/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    <script src="/templates/periodicos_v3/js/jquery.multi-select.js"></script>
+    <script src="/templates/periodicos_v3/lib/jquery-mask/1.14.10/js/jquery.mask.js"></script>
+    <script src="/templates/periodicos_v3/js/fieldMaskValidation.js"></script>
+    <!-- Select2 Javascript -->
+    <script src="/templates/periodicos_v3/lib/select2/4.1.0/js/select2.min.js"></script>
+    <script src="/templates/periodicos_v3/lib/select2/4.1.0/js/i18n/pt-BR.js"></script>
+    <script src="/templates/periodicos_v3/js/drawer.min.js"></script>
+    <script src="/templates/periodicos_v3/js/main.js"></script>
+    <script>
+      $( document ).ready(function() {
+        // Set color template
+        document.body.style.setProperty('--cor-padrao-1','rgba(28, 28, 94, 1)');
+        document.body.style.setProperty('--cor-padrao-2','rgba(241, 100, 33, 1)');
+      });
+	  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .icons-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icon {
+      font-size: 50px;
+      cursor: pointer;
+      color: #555;
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+    }
+
+    .icon.active {
+      color: #007bff; /* Cor ao marcar */
+    }
+  </style>
+    </script>
+  </head>
+  <body>
+  <div class="icons-container">
+    <i class="far fa-thumbs-up icon" title="Curtir"></i>
+    <i class="far fa-hourglass icon" title="Ampulheta"></i>
+  </div>
+          
+<div class="container-fluid bg-white">
+    <div class="container">
+        <div class="row align-items-center barra-gov-br">
+            <div class="col-4">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <a href="https://www.gov.br" target="_blank" class="logo-barra-gov-br">
+                            <img src="/images/govbr-logo-large.png" class="img-fluid" alt="Logo do Governo Federal">
+                        </a>
+                    </div>
+                    <div class="col-8 d-none d-md-none d-lg-block">
+                        <a href="https://www.gov.br/capes" target="_blank" class="barra-gov-br-nome-orgao">
+                            Ministério da Educação/CAPES                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <nav class="bg-white">
+                    <ul class="nav justify-content-end align-items-center">
+                                                    <li class="barra-gov-br-nav-item d-none d-md-none d-lg-block">
+                                <a class="barra-gov-br-nav-link" href="https://www.gov.br/pt-br/orgaos-do-governo" target="_blank">Órgãos do Governo</a>
+                            </li>
+                                                    <li class="barra-gov-br-nav-item d-none d-md-none d-lg-block">
+                                <a class="barra-gov-br-nav-link" href="https://www.gov.br/acessoainformacao/pt-br" target="_blank">Acesso à Informação</a>
+                            </li>
+                                                    <li class="barra-gov-br-nav-item d-none d-md-none d-lg-block">
+                                <a class="barra-gov-br-nav-link" href="http://www4.planalto.gov.br/legislacao" target="_blank">Legislação</a>
+                            </li>
+                                                    <li class="barra-gov-br-nav-item d-none d-md-none d-lg-block">
+                                <a class="barra-gov-br-nav-link" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" target="_blank">Acessibilidade</a>
+                            </li>
+                                                <li class="barra-gov-br-nav-item">
+                            <a class="barra-gov-br-nav-link contraste" href="#"><i class="fas fa-adjust"></i></a>
+                        </li>
+                        <li class="barra-gov-br-nav-item">
+                            <a class="btn barra-gov-br-btn-entrar btn-sm w-100"  href="https://acesso.gov.br" role="button" target="_blank"><i class="fas fa-user"></i> Entrar</a>
+                        </li>
+                    </ul>                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="container-fluid">
+      <header class="row shadow-sm">
+        <div class="container mx-top-header">
+          <div class="row align-items-center">
+            <div class="col-2 col-sm-1 d-block d-lg-none">
+              <a class="navbar-toggler" href="#drawerMenu" data-toggle="drawer" data-target="#drawerMenu" aria-controls="drawerMenu" aria-label="Toggle navigation">
+                <span class="fas fa-align-justify"></span>
+              </a>
+            </div>
+            <div class="logos-principais col-10 col-sm-9 col-lg-4">
+              <div class="row align-items-center">
+                <div class="col-5">
+                                      <a target="_blank" href="https://www.gov.br/capes/pt-br" title="Coordenação de Aperfeiçoamento de Pessoal de Nível Superior" style="text-decoration:none">
+                      <img class="img-fluid logo-capes" src="/images/logocapes2.png">
+                    </a>
+                                  </div>
+                <div class="col">
+                  <a target="_self" href="/" title="Voltar para a página inicial" style="text-decoration:none">
+                    <img class="img-fluid logo-periodicos" src="/images/logo_periodicos-simples2.jpg" alt="Portal de Periódicos da CAPES">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-7 col-lg-6 d-none d-md-none d-lg-block">
+              <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse justify-content-end menu-horizontal" id="navbarNav">
+                  <ul class="nav menu mod-list">
+<li class="item-646 deeper parent"><a href="#" >Sobre</a><ul class="nav-child unstyled small"><li class="item-722"><a href="/index.php/acessoaberto.html" >Acesso Aberto</a></li><li class="item-647"><a href="/index.php/sobre/quem-somos.html" >Quem somos</a></li><li class="item-652"><a href="/index.php/sobre/missao-e-objetivos.html" >Missão e objetivos</a></li><li class="item-653"><a href="/index.php/sobre/nossa-historia.html" >Nossa história</a></li><li class="item-654"><a href="/index.php/sobre/quem-participa.html" >Quem participa</a></li><li class="item-655"><a href="/index.php/sobre/parceiros.html" >Parceiros</a></li><li class="item-656"><a href="/index.php/sobre/documentacao.html" >Documentação</a></li><li class="item-657"><a href="/index.php/sobre/conteudo-contratado.html" >Contratos</a></li></ul></li><li class="item-648 active deeper parent"><a href="#" >Acervo</a><ul class="nav-child unstyled small"><li class="item-699 current active"><a href="/index.php/acervo/buscador.html" >Buscar assunto</a></li><li class="item-700"><a href="/index.php/acervo/lista-a-z-bases.html" >Lista de bases e coleções</a></li><li class="item-701"><a href="/index.php/acervo/lista-a-z-livros.html" >Lista de livros</a></li><li class="item-702"><a href="/index.php/acervo/lista-a-z-periodicos.html" >Lista de periódicos</a></li></ul></li><li class="item-649 deeper parent"><a href="#" >Treinamentos</a><ul class="nav-child unstyled small"><li class="item-658"><a href="/index.php/treinamentos/calendário.html" >Calendário</a></li><li class="item-659"><a href="/index.php/treinamentos/material-didatico.html" >Materiais de apoio</a></li></ul></li><li class="item-650"><a href="/index.php/informativos.html" >Informativos</a></li><li class="item-651 deeper parent"><a href="#" >Ajuda</a><ul class="nav-child unstyled small"><li class="item-660"><a href="/index.php/ajuda/perguntas-frequentes.html" >Perguntas frequentes</a></li><li class="item-661"><a href="/index.php/ajuda/suporte-regional.html" >Suporte regional</a></li><li class="item-662"><a href="/index.php/ajuda/fale-conosco.html" >Fale conosco</a></li></ul></li></ul>
+
+                </div>
+              </nav>
+            </div>
+            <div class="col">
+              <script>
+$( document ).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+	
+    $('.bt-meu-espaco-lembrar').click(function(){
+        if($( "#body-login" ).hasClass( "show" )){
+
+            $( "#body-login" ).removeClass( "show" );
+            $( "#body-login" ).addClass( "hidden" );
+
+            $( "#body-lembrar" ).removeClass( "hidden" );
+            $( "#body-lembrar" ).addClass( "show" );
+        }else{
+            $( "#body-login" ).removeClass( "hidden" );
+            $( "#body-login" ).addClass( "show" );
+
+            $( "#body-lembrar" ).removeClass( "show" );
+            $( "#body-lembrar" ).addClass( "hidden" );
+        }
+    });
+    $('.bt-meu-espaco-receber').click(function(){
+        if($( "#body-login" ).hasClass( "show" )){
+
+            $( "#body-login" ).removeClass( "show" );
+            $( "#body-login" ).addClass( "hidden" );
+
+            $( "#body-receber" ).removeClass( "hidden" );
+            $( "#body-receber" ).addClass( "show" );
+        }else{
+            $( "#body-login" ).removeClass( "hidden" );
+            $( "#body-login" ).addClass( "show" );
+
+            $( "#body-receber" ).removeClass( "show" );
+            $( "#body-receber" ).addClass( "hidden" );
+        }
+    });
+    $('.sair').click(function(){
+                location.href='index.php?option=com_users&task=user.logout&89bd634c88d16ddd5965c6353e8bcd4d=1';
+    });
+});
+</script>
+
+    <div class="dropdown">
+        <a
+            role="button"
+            data-message="Botão para realizar o login no meu espaço"
+            id="bt-meu-espaco-login"
+            class="btn btn-outline-padrao py-2 float-right"
+            data-toggle="dropdown"
+            href="#"
+            aria-haspopup="true" 
+            aria-expanded="false">Meu espaço
+        </a>
+        <div class="border-0 shadow-sm dropdown-menu-right dropdown-menu dropdown-menu-lg-left" aria-labelledby="bt-meu-espaco-login" role="alert" aria-live="assertive" aria-atomic="true" id="card-login">
+            <!-- Fazer o login -->
+            <div class="card-body" id="body-login">
+                <h5 class="card-title mb-4 mt-4">Entrar</h5>
+                <form id="form-login" name="frmLogin" action="/index.php/component/users/?task=user.login&amp;Itemid=645" method="post">
+                    <input type="hidden" name="89bd634c88d16ddd5965c6353e8bcd4d" value="1" />                    <div class="form-row">
+                        <div class="col-md-12">
+                            <label class="sr-only" for="usuario">Nome do usuário</label>
+                            <div class="inner-addon left-addon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="username" class="form-control mb-3 border-0 bg-input-login" id="usuario" placeholder="Nome do usuário" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="sr-only" for="senha">Senha</label>
+                            <div class="inner-addon left-addon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" name="password" class="form-control mb-3 border-0 bg-input-login" id="senha" placeholder="Senha" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <small><a href="#" class="bt-meu-espaco-lembrar" title="Esqueci minha senha">Esqueci minha senha</a></small>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary mb-2 w-100" data-message="Botão para Entrar">Entrar</button>
+                            <small>Não possui acesso? <a href="/index.php/meu-espaço/registre-se.html" target="_self">Registre-se</a></small> <br>
+                            <small><a href="#" class="bt-meu-espaco-receber" title="Não recebi o e-mail de confirmação de cadastro">Não recebi o e-mail de confirmação de cadastro</a></small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Lembrar Senha -->
+            <div class="card-body hidden" id="body-lembrar" aria-atomic="true">
+                <a href="#" class="bnt-voltar bt-meu-espaco-lembrar" title="Voltar para o login">
+                    <small><i class="fas fa-arrow-circle-left"></i> Voltar</small>
+                </a>
+                <h5 class="card-title mb-4 mt-4">Lembrar minha senha</h5>
+                <form name="frmNews" class="form-inline" action="index.php" method="post">
+                    <input type="hidden" name="option" value="com_plogin" />
+                    <input type="hidden" name="controller" value="Lembrar" />
+                    <input type="hidden" name="task" value="remember" />
+                    <input type="hidden" name="view" value="ploginlembrar" />
+                    <div class="form-row">
+                        <div class="col-md-12">
+                            <label class="sr-only" for="lembrar-email">Digite o seu e-mail</label>
+                            <div class="inner-addon left-addon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" name="username" class="form-control mb-3 border-0 bg-input-login w-100" id="lembrar-email" placeholder="Digite o seu e-mail" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2 w-100" value="Enviar" data-message="Botão para Lembrar minha senha">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Receber email de confirmação -->
+            <div class="card-body hidden" id="body-receber" aria-atomic="true">
+                <a href="#" class="bnt-voltar bt-meu-espaco-receber" title="Voltar para o login">
+                    <small><i class="fas fa-arrow-circle-left"></i> Voltar</small>
+                </a>
+                <h5 class="card-title mb-4 mt-4">Receber meu e-mail de confirmação</h5>
+                <form name="frmResendLink" class="form-inline" action="" method="post">
+                    <input type="hidden" name="89bd634c88d16ddd5965c6353e8bcd4d" value="1" />                    <input type="hidden" name="option" value="com_plogin" />
+                    <input type="hidden" name="controller" value="Resendnew" />
+                    <input type="hidden" name="return" value="" />
+                    <input type="hidden" name="task" value="resendactivation" />
+                    <input type="hidden" name="gid" value="0" />
+                    <div class="form-row">
+                        <div class="col-md-12">
+                            <label class="sr-only" for="receber-email">E-mail de usuário</label>
+                            <div class="inner-addon left-addon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="email" class="form-control mb-3 border-0 bg-input-login w-100" id="receber-email" placeholder="E-mail de usuário" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2 w-100" value="Enviar" data-message="Botão para Receber meu e-mail de confirmação">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+            </div>
+          </div>
+          <div id="drawerMenu" class="drawer drawer-left dw-xs-8 dw-sm-4 dw-md-4 fold" aria-labelledby="drawerMenu">
+            <div class="drawer-contents">
+              <div class="drawer-heading">
+                <div class="page-header">
+                  <a href="#drawerMenu" data-toggle="drawer" aria-controls="drawerMenu" class="bnt-voltar">
+                      <p class="h2 text-right"><i class="fas fa-times"></i></p>
+                  </a>
+                </div>
+              </div>
+              <div class="drawer-body">
+                <ul class="nav menu mod-list">
+<li class="item-646 deeper parent"><a href="#" >Sobre</a><ul class="nav-child unstyled small"><li class="item-722"><a href="/index.php/acessoaberto.html" >Acesso Aberto</a></li><li class="item-647"><a href="/index.php/sobre/quem-somos.html" >Quem somos</a></li><li class="item-652"><a href="/index.php/sobre/missao-e-objetivos.html" >Missão e objetivos</a></li><li class="item-653"><a href="/index.php/sobre/nossa-historia.html" >Nossa história</a></li><li class="item-654"><a href="/index.php/sobre/quem-participa.html" >Quem participa</a></li><li class="item-655"><a href="/index.php/sobre/parceiros.html" >Parceiros</a></li><li class="item-656"><a href="/index.php/sobre/documentacao.html" >Documentação</a></li><li class="item-657"><a href="/index.php/sobre/conteudo-contratado.html" >Contratos</a></li></ul></li><li class="item-648 active deeper parent"><a href="#" >Acervo</a><ul class="nav-child unstyled small"><li class="item-699 current active"><a href="/index.php/acervo/buscador.html" >Buscar assunto</a></li><li class="item-700"><a href="/index.php/acervo/lista-a-z-bases.html" >Lista de bases e coleções</a></li><li class="item-701"><a href="/index.php/acervo/lista-a-z-livros.html" >Lista de livros</a></li><li class="item-702"><a href="/index.php/acervo/lista-a-z-periodicos.html" >Lista de periódicos</a></li></ul></li><li class="item-649 deeper parent"><a href="#" >Treinamentos</a><ul class="nav-child unstyled small"><li class="item-658"><a href="/index.php/treinamentos/calendário.html" >Calendário</a></li><li class="item-659"><a href="/index.php/treinamentos/material-didatico.html" >Materiais de apoio</a></li></ul></li><li class="item-650"><a href="/index.php/informativos.html" >Informativos</a></li><li class="item-651 deeper parent"><a href="#" >Ajuda</a><ul class="nav-child unstyled small"><li class="item-660"><a href="/index.php/ajuda/perguntas-frequentes.html" >Perguntas frequentes</a></li><li class="item-661"><a href="/index.php/ajuda/suporte-regional.html" >Suporte regional</a></li><li class="item-662"><a href="/index.php/ajuda/fale-conosco.html" >Fale conosco</a></li></ul></li></ul>
+
+              </div>
+            </div>
+          </div>
+          <!-- Acesso CAFe -->
+                      <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-10 col-md-11">
+    <p class="small mb-0" tabindex="0">
+                    Você tem acesso ao conteúdo gratuito do Portal de Periódicos da CAPES<br>
+            </p>
+    <div class="dropdown">
+        <a href="#" class="dropdown-toggle" role="button" id="dropdownCafe" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acesso CAFe</a>
+        <div class="dropdown-menu p-4 text-muted" id="dropdownCafeDescricao" aria-labelledby="dropdownCafe">
+                            <p>Sua pesquisa será realizada no conteúdo gratuito disponível no acervo do Portal de Periódicos da CAPES. O conteúdo assinado com as editoras científicas está disponível para os IPs identificados das instituições participantes. Caso você esteja acessando fora da rede da sua instituição, é necessário efetuar o login na Comunidade Acadêmica Federada (CAFe).</p>
+             
+            <a href="/index.php/acesso-cafe.html" class="btn btn-outline-padrao p-2 w-100">
+                <i class="fas fa-coffee"></i> Acesso CAFe            </a>
+        </div>
+    </div>        
+</div>
+            </div>
+                  </div>
+	    </header>
+	  
+      <a href="https://pablodiego.com.br/brunno/capes/capes.html" class='bnt-voltar' onclick="window.history.go(-1);">
+				<h2><i class="fas fa-arrow-circle-left"></i> Voltar</h2>
+			</a>
+      
+              <div class="row bg-padrao">
+          <div class="container">
+              <div aria-label="Breadcrumbs" role="navigation">
+	<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+					<li>
+				<a href="https://pablodiego.com.br/brunno/capes/capes.html" class="bradcrumb-icon-home" title="Voltar para a página inicial">
+					<i class="fas fa-home"></i>
+				</a>
+				<span class="divider">
+				</span>
+			</li>
+		
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+											<span class="pathway" itemprop="name">Acervo</span>
+					
+											<span class="divider">
+							 						</span>
+										<meta itemprop="position" content="1">
+				</li>
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="active">
+					<span itemprop="name">
+						Buscar assunto					</span>
+					<meta itemprop="position" content="2">
+				</li>
+				</ul>
+</div>
+
+          </div>
+        </div>
+      
+      
+                  <!-- Aplicativo -->
+            <!-- Conteúdo principal -->
+              <div class="row">
+          <div class="container mb-5">
+                                        <div class="row">
+              <div class="col-md-12">
+                <script src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+<section id="result-busca" class="has-inner-drawer mt-5">
+    <!-- Busca -->
+    <div id="loading-voice-record" class="row justify-content-md-center mb-2" style="display:none">
+    <div class="col-md-1 loading-voice-record">
+        <i class="fas fa-microphone"></i>
+        <div class="loading-voice-record-text"></div>
+    </div>
+</div>
+<div class="row justify-content-md-center mb-5">
+    <div class="col-md-12 col-sm-12">
+        <form action="" method="GET" id="busca" class="busca-watson">
+            <div class="search-default">
+                <div class="input-group-prepend">
+                    <span class="input-text-busca">Olá.</span>
+                </div>
+                <button type="submit" class="btn" id="btn-busca-defaul" value="Submit"><i class="fas fa-search"></i></button>
+                <button type="button" class="btn" id="recordButton" data-toggle="tooltip" data-placement="bottom" title="Busca por voz"><i class="fas fa-microphone"></i></button>
+                <input name="q" type="search" id="input-busca" class="form-control" placeholder="Digite os termos de busca" value="Eraldo Guerra, Exatas" minlength="4" required>
+            </div>
+        </form>
+        <form action="" method="GET" id="busca-avancada" class="busca-watson">
+            <div class="busca-avancada">
+    <div class="card w-100">
+        <div class="card-body">
+            <div class="row mb-2">
+                <div class="col-sm-12">
+                    <div class="form-group row custom-select-sm">
+                        <label for="ecopo-busca" class="col-sm-2 col-form-label">Escopo da Busca: </label>
+                        <div class="col-sm-3">
+                            <select class="form-control custom-select-sm" id="escopo-busca" name="source">
+                                <option value="all" selected>Buscar tudo</option>
+                                <option value="Base" >Bases</option>
+                                <option value="Periodico" >Periódicos</option>
+                                <option value="Livro" >Livros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div id="fields" class="col-sm-9">
+                    <small>Filtros de busca</small>
+
+                    <div class="row mb-3">
+                        <div class="col-sm-3 p-0">
+                            <div class="form-group custom-select-sm">
+                                <select class="form-control custom-select-sm campo" name="campos">
+                                    <option value="all">Qualquer campo</option>
+                                    <option value="title">Título</option>
+                                    <option value="authors">Autor</option>
+                                    <option value="topics">Assunto</option>
+                                    <option value="publisher">Editor</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 p-0">
+                            <div class="form-group custom-select-sm">
+                                <select class="form-control custom-select-sm" name="tipo_match">
+                                    <option value="contains">Contém</option>
+                                    <option value="exact">é (exato)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                           <input class="form-control-sm w-100" type="text" name="q"
+                            placeholder="Digite os termos de busca" style="height:auto; padding: 2px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group custom-select-sm">
+                        <label for="type">Tipo de Material</label>
+                        <select class="form-control custom-select-sm" id="type">
+                            <option value="all">Todos os tipos</option>
+                            <option value="Artigo" >Artigo</option>
+                            <option value="Capítulo de livro" >Capítulo de livro</option>
+                            <option value="Paratexto" >Paratexto</option>
+                            <option value="Revisão" >Revisão</option>
+                            <option value="Pré-print" >Pré-print</option>
+                            <option value="Livro" >Livro</option>
+                            <option value="Dissertação" >Dissertação</option>
+                            <option value="Conjunto de dados" >Conjunto de dados</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="button" id="add-field" class="btn btn-link btn-sm"><i class="fas fa-plus"></i> Adicionar outro campo</button>
+                    <button type="button" class="btn btn-link btn-sm limpar-busca"><i class="fas fa-redo"></i> Limpar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-lg btn-link float-right btn-busca-avancada" value="Submit"><i class="fas fa-search"></i> BUSCAR</button>
+        </div>
+    </div>
+</div>            <button type="button" class="btn btn-link ml-2 float-right" id="btn-busca-avancada">Busca Avançada</button>
+        </form>
+    </div>
+</div>
+
+
+    <div id="loading-busca" class='container-loading d-none'>
+  <div class='loader'>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--text'></div>
+  </div>
+</div>
+                  <div id="resultados">
+                    <div class="row">
+    <div id="result-busca-0" class="col-sm-12 mb-5 result-busca">
+        <div class="col-md-11 d-none" id="result-busca-load-0">
+            <div>
+                <lines class="shine" style="width:80%;"></lines>
+                <lines class="shine" style="width:100%;"></lines>
+                <lines class="shine" style="width:90%;"></lines>
+                <lines class="shine" style="width:80%;"></lines>
+            </div>
+        </div>
+        <div class="col-md-12" id="conteudo-0">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="small">
+                        <b>Capítulo de livro</b>
+                                            </p>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-10">
+                    <h6>
+                        <span class="text-muted titulo-busca-nun mr-2"><strong>1</strong></span>
+                        <a type="button" href="/index.php/acervo/buscador.html?task=detalhes&source=&id=W4242976928" class="titulo-busca">A Proposal for Multidisciplinary Software for People with Autism</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <span class="float-right">
+                        <a type="button" target="_blank" href="/index.php/acervo/buscador.html?task=detalhes&id=W4242976928&print=true">
+                            <i class="fas fa-print mr-2 extra-action print-item"></i>
+                        </a>
+                    </span>
+					<div class="icons-container">
+    <i class="far fa-thumbs-up icon" title="Curtir"></i>
+    <i class="far fa-hourglass icon" title="Ampulheta"></i>
+  </div>
+                </div>
+            </div>
+            <p class="small"><b><b>Eraldo</b> <b>Guerra</b>, Felipe Furtado</b></p>
+
+                            <blockquote class="blockquote blockquote-busca mt-3">
+                    <p class="mb-0 small">This chapter is about the study of treatments for autistic children and interventions of entertainment games with the purpose of developing a technological solution in order to promote a better adaptation between the autistic children and treatment, consequently showing better results in a shorter period of time. The multidisciplinary software for Autism treatment is being developed. It is based on PECs, ABA, and TEACCH methods, and it uses ludic games and activity interventions. Before applying  ... </p>
+                </blockquote>
+            
+            
+            <p class="small">
+                <b>2013</b>
+                                    <b> - IGI Global </b>
+                                                    <b>| Advances in wireless technologies and telecommunication book series </b>
+                            </p>
+            <p class="peerreviewed mt-2">
+                                    <span class="ml-2"  data-toggle="tooltip" data-placement="top" title="Produção Nacional"> <b><img width="22" src="/images/flag-brazil.png" /> </b></span>
+                                                                                                                                </p>
+
+            <div class="row p-2">
+                <div class="mr-3">
+                                            <a class="link-default add-metrics" data-id="W4242976928" target="_blank" href="https://doi.org/10.4018/978-1-4666-4781-7.ch016"><i class="fas fa-sign-in-alt"></i> Acessar </a>
+                                    </div>
+                    <div class="dropdown mr-3">
+        <a class="btn btn-link btn-version dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Disponibilidade
+        </a>
+        <div class="dropdown-menu">
+                            <a class="dropdown-item add-metrics" data-id="W4242976928" target="_blank" href="https://doi.org/10.4018/978-1-4666-4781-7.ch016"><i class="fas fa-external-link-alt"></i> Advances in wireless technologies and telecommunication book series</a>
+                    </div>
+    </div>
+                                    <div class="mr-3">
+                        <div data-badge-popover="right" data-badge-type="2" data-doi="10.4018/978-1-4666-4781-7.ch016" data-hide-no-mentions="true" class="altmetric-embed"></div>
+                    </div>
+                    <div class="mr-3">
+                        <a href="https://plu.mx/plum/a/?doi=10.4018/978-1-4666-4781-7.ch016" data-badge="true" class="plumx-plum-print-popup"></a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col-md-10">
+        <h6>
+            <span class="text-muted titulo-busca-nun mr-2"><strong>2</strong></span>
+            <a type="button" href="/index.php/acervo/buscador.html?task=detalhes&source=&id=W4242976928" class="titulo-busca">
+                Analysis of the pharmacological intervention and cognitive development through technology in the treatment of autism
+            </a>
+        </h6>
+    </div>
+    <div class="col-md-2">
+        <span class="float-right">
+            <a type="button" target="_blank" href="/index.php/acervo/buscador.html?task=detalhes&id=W4242976928&print=true">
+                <i class="fas fa-print mr-2 extra-action print-item"></i>
+            </a>
+        </span>
+        <div class="icons-container">
+            <!-- Ícones de curtir e ampulheta -->
+            <i class="far fa-thumbs-up icon" title="Curtir"></i>
+            <i class="far fa-hourglass icon" title="Ampulheta"></i>
+        </div>
+    </div>
+</div>
+
+<p class="small"><b><b>Eraldo Martins Guerra Filho</b></p>
+
+<blockquote class="blockquote blockquote-busca mt-3">
+    <p class="mb-0 small"></p>
+</blockquote>
+
+<p class="small">
+    <b>2018</b>
+    <b> OMICS Publishing Group </b>
+    <b>| Journal of Bioanalysis & Biomedicine </b>
+</p>
+<p class="peerreviewed mt-2">
+    <span class="ml-2" data-toggle="tooltip" data-placement="top" title="Produção Nacional"> <b><img width="22" src="/images/flag-brazil.png" /> </b></span>
+</p>
+
+<div class="row p-2">
+    <div class="mr-3">
+        <a class="link-default add-metrics" data-id="W4242976928" target="_blank" href="https://doi.org/10.4018/978-1-4666-4781-7.ch016"><i class="fas fa-sign-in-alt"></i> Acessar </a>
+    </div>
+    <div class="dropdown mr-3">
+        <a class="btn btn-link btn-version dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Disponibilidade
+        </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item add-metrics" data-id="W4242976928" target="_blank" href="https://doi.org/10.4018/978-1-4666-4781-7.ch016"><i class="fas fa-external-link-alt"></i> Advances in wireless technologies and telecommunication book series</a>
+        </div>
+    </div>
+</div>
+
+<!-- Estilos Específicos para os Ícones -->
+<style>
+    /* Estilo específico para os ícones */
+    .icons-container .icon {
+        font-size: 24px; /* Tamanho do ícone */
+        color: #555; /* Cor padrão */
+        cursor: pointer;
+        transition: color 0.3s ease; /* Transição suave */
+    }
+
+    /* Cor quando clicado (ativo) */
+    .icons-container .icon.active {
+        color: #007bff; /* Azul */
+    }
+</style>
+
+<!-- JavaScript para Interação com os Ícones -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Seleciona todos os ícones dentro do bloco de ícones
+        const icons = document.querySelectorAll('.icons-container .icon');
+
+        icons.forEach(icon => {
+            // Adiciona evento de clique para alternar a classe 'active'
+            icon.addEventListener('click', () => {
+                icon.classList.toggle('active'); // Alterna a classe 'active'
+            });
+        });
+    });
+</script><br>
+
+
+<div class="row mb-2">
+                <div class="col-md-10">
+                    <h6>
+                        <span class="text-muted titulo-busca-nun mr-2"><strong>3</strong></span>
+                        <a type="button" href="/index.php/acervo/buscador.html?task=detalhes&source=&id=W4242976928" class="titulo-busca">Can game applicative multidisciplinary approach for the treatment of autistic child</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <span class="float-right">
+                        <a type="button" target="_blank" href="/index.php/acervo/buscador.html?task=detalhes&id=W4242976928&print=true">
+                            <i class="fas fa-print mr-2 extra-action print-item"></i>
+                        </a>
+                    </span>
+					<div class="icons-container">
+    <i class="far fa-thumbs-up icon" title="Curtir"></i>
+    <i class="far fa-hourglass icon" title="Ampulheta"></i>
+  </div>
+                </div>
+            </div>
+            <p class="small"><b><b>Eraldo Martins Guerra Filho</b></p>
+
+                            <blockquote class="blockquote blockquote-busca mt-3">
+                    <p class="mb-0 small"></p>
+                </blockquote>
+            
+            
+            <p class="small">
+                <b>2014</b>
+                                    <b> OMICS Publishing Group </b>
+                                                    <b>| Journal of Bioanalysis & Biomedicine </b>
+                            </p>
+            <p class="peerreviewed mt-2">
+                                    <span class="ml-2"  data-toggle="tooltip" data-placement="top" title="Produção Nacional"> <b><img width="22" src="/images/flag-brazil.png" /> </b></span>
+                                                                                                                                </p>
+
+            <div class="row p-2">
+                <div class="mr-3">
+                                            <a class="link-default add-metrics" data-id="W4242976928" target="_blank" href="https://doi.org/10.4018/978-1-4666-4781-7.ch016"><i class="fas fa-sign-in-alt"></i> Acessar </a>
+                                    </div>
+                    <div class="dropdown mr-3">
+        <a class="btn btn-link btn-version dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Disponibilidade
+        </a>
+        <div class="dropdown-menu">
+                            <a class="dropdown-item add-metrics" data-id="W4242976928" target="_blank" href="https://doi.org/10.4018/978-1-4666-4781-7.ch016"><i class="fas fa-external-link-alt"></i> Advances in wireless technologies and telecommunication book series</a>
+                    </div>
+    </div>
+                                    <div class="mr-3">
+                        <div data-badge-popover="right" data-badge-type="2" data-doi="10.4018/978-1-4666-4781-7.ch016" data-hide-no-mentions="true" class="altmetric-embed"></div>
+                    </div>
+                    <div class="mr-3">
+                        <a href="https://plu.mx/plum/a/?doi=10.4018/978-1-4666-4781-7.ch016" data-badge="true" class="plumx-plum-print-popup"></a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div id="result-busca-1" class="col-sm-12 mb-5 result-busca">
+        <div class="col-md-11 d-none" id="result-busca-load-1">
+            <div>
+                <lines class="shine" style="width:80%;"></lines>
+                <lines class="shine" style="width:100%;"></lines>
+                <lines class="shine" style="width:90%;"></lines>
+                <lines class="shine" style="width:80%;"></lines>
+            </div>
+        </div>
+                </strong>
+                <div class="row">
+                    <div class="col-md-12">
+                        
+    <nav aria-label='Paginação resultado da Busca' class='float-right'>
+        <ul class='pagination'>
+                                                            <span class="page-link active">1</span>
+                                                </ul>
+    </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<form id="faceta-submit" action="" method="post">
+    <input type="hidden" name="q" value="Eraldo Guerra, Exatas">
+</form>
+<script>
+$( document ).ready(function() {
+
+    function loading(){
+        $("#loading-busca").removeClass("d-none");
+    }
+
+    $("#busca").submit(function(event){
+        loading();
+    });
+
+    function buscaAvancada(){
+        if (getParameterByName('mode') === 'advanced') {
+
+            let source = $("#escopo-busca").val();
+            let type = $("#type").val();
+
+            $("#faceta").append('<input type="hidden" name="mode" value="advanced">');
+            $("#faceta").append(`<input type="hidden" name="source" value="${source}">`);
+            if(type != 'all'){
+                $("#faceta").append(`<input type="hidden" name="type[]" value="type==${type}">`);
+            }
+            $('#faceta input[name="q"]').val(``);
+        }
+    }
+
+    $("#busca-avancada").submit(function(event){
+        event.preventDefault();
+        const campos = $(this).serializeArray();
+        let expression = '';
+        let index = 0;
+        let lastLogicalOp = null;
+
+        campos.forEach((item, i) => {
+            if (item.name === 'op_logico') {
+                lastLogicalOp = item.value;
+            } else {
+                if (item.name === 'campos') {
+                    if (index > 0 && lastLogicalOp) {
+                        expression += ` ${lastLogicalOp} `;
+                    }
+                    expression += `${item.value}:`;
+                } else if (item.name === 'tipo_match') {
+                    expression += `${item.value}(`;
+                } else if (item.name === 'q') {
+                    expression += `${item.value})`;
+                    index++;
+                }
+            }
+        });
+
+        let source = $("#escopo-busca").val();
+        let type = $("#type").val();
+
+        $("#busca").append('<input type="hidden" name="mode" value="advanced">');
+        $("#busca").append(`<input type="hidden" name="source" value="${source}">`);
+        if(type != 'all'){
+            $("#busca").append(`<input type="hidden" name="type[]" value="type==${type}">`);
+        }
+        $('#input-busca').val(expression)
+
+        $('#busca').submit()
+    });
+
+    $('#add-field').click(function() {
+        const newField = `
+            <div class="row mb-3 field-row">
+                <div class="col-sm-1 p-0">
+                    <div class="form-group custom-select-sm">
+                        <select class="form-control custom-select-sm op-logico" name="op_logico">
+                            <option value="AND">E</option>
+                            <option value="OR">Ou</option>
+                            <option value="NOT">Não</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-3 p-0">
+                    <div class="form-group custom-select-sm">
+                        <select class="form-control custom-select-sm campo" name="campos">
+                            <option value="all">Qualquer campo</option>
+                            <option value="title">Título</option>
+                            <option value="authors">Autor</option>
+                            <option value="topics">Assunto</option>
+                            <option value="publisher">Editor</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2 p-0">
+                    <div class="form-group custom-select-sm">
+                        <select class="form-control custom-select-sm" name="tipo_match">
+                            <option value="contains">Contém</option>
+                            <option value="exact">é (exato)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <input class="form-control-sm w-100" type="text" name="q"
+                    placeholder="Digite os termos de busca" style="height:auto; padding: 2px;">
+                </div>
+                <div class="col-sm-1 d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-link btn-sm remove-field"><i class="fas fa-times"></i></button>
+                </div>
+            </div>`;
+
+        $('#fields').append(newField);
+        checkAddFieldButton();
+    });
+
+    function createFieldsFromExpression(expression) {
+        const fieldsContainer = $('#fields');
+        fieldsContainer.empty();
+
+        const regex = /(?:\s*(AND|OR|NOT)\s*)?(\w+):(\w+)\(([^)]+)\)/g;
+        let match;
+        let index = 0;
+
+        while ((match = regex.exec(expression)) !== null) {
+            const [_, logicalOp, field, matchType, value] = match;
+
+            let fieldRowHtml = '<div class="row mb-3 field-row">';
+
+            if (index > 0 && logicalOp) {
+                fieldRowHtml += `
+                    <div class="col-sm-1 p-0">
+                        <div class="form-group custom-select-sm">
+                            <select class="form-control custom-select-sm op-logico" name="op_logico">
+                                <option value="AND" ${logicalOp === 'AND' ? 'selected' : ''}>E</option>
+                                <option value="OR" ${logicalOp === 'OR' ? 'selected' : ''}>Ou</option>
+                                <option value="NOT" ${logicalOp === 'NOT' ? 'selected' : ''}>Não</option>
+                            </select>
+                        </div>
+                    </div>
+                `;
+            } else if (index > 0) {
+                fieldRowHtml += `
+                    <div class="col-sm-1 p-0"></div>
+                `;
+            }
+
+            fieldRowHtml += `
+                <div class="col-sm-3 p-0">
+                    <div class="form-group custom-select-sm">
+                        <select class="form-control custom-select-sm campo" name="campos">
+                            <option value="all" ${field === 'all' ? 'selected' : ''}>Qualquer campo</option>
+                            <option value="title" ${field === 'title' ? 'selected' : ''}>Título</option>
+                            <option value="authors" ${field === 'authors' ? 'selected' : ''}>Autor</option>
+                            <option value="topics" ${field === 'topics' ? 'selected' : ''}>Assunto</option>
+                            <option value="publisher" ${field === 'publisher' ? 'selected' : ''}>Editor</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2 p-0">
+                    <div class="form-group custom-select-sm">
+                        <select class="form-control custom-select-sm" name="tipo_match">
+                            <option value="contains" ${matchType === 'contains' ? 'selected' : ''}>Contém</option>
+                            <option value="exact" ${matchType === 'exact' ? 'selected' : ''}>é (exato)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <input class="form-control-sm w-100" type="text" name="q" value="${value}" placeholder="Digite os termos de busca" style="height:auto; padding: 2px;">
+                </div>`;
+            
+            if(index > 0){
+                fieldRowHtml += `<div class="col-sm-1 d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-link btn-sm remove-field"><i class="fas fa-times"></i></button>
+                </div>`;
+            }
+
+            fieldRowHtml += "</div>"
+
+            fieldsContainer.append(fieldRowHtml);
+
+            index++;
+        }
+
+        checkAddFieldButton();
+    }
+
+
+    $('#fields').on('click', '.remove-field', function() {
+        $(this).closest('.field-row').remove();
+        checkAddFieldButton();
+    });
+
+    function checkAddFieldButton() {
+        const addButton = $('#add-field');
+        const fieldCount = $('#fields .row.mb-3').length;
+        addButton.prop('disabled', fieldCount >= 5);
+    }
+
+    function getParameterByName(name) {
+        const url = window.location.href;
+        const nameRegex = name.replace(/[[\]]/g, '\\$&');
+        const regex = new RegExp(`[?&]${nameRegex}(=([^&#]*)|&|#|$)`);
+        const results = regex.exec(url);
+        return results ? decodeURIComponent(results[2].replace(/\+/g, ' ')) : null;
+    }
+
+    if (getParameterByName('mode') === 'advanced') {
+        $(".busca-avancada").slideToggle();
+        $(".search-default").toggle();
+        var buttonText = $("#btn-busca-avancada").text() === "Busca Avançada" ? "Busca Simples" : "Busca Avançada";
+        $("#btn-busca-avancada").text(buttonText);
+        $("#expandir-resultados").prop('checked', true);
+        createFieldsFromExpression("");
+        buscaAvancada();
+    }
+
+    $("#faceta").submit(function(event){
+        loading();
+    });
+
+    $("#btn-busca-avancada").click(function(){
+        $(".busca-avancada").slideToggle();
+        $(".search-default").toggle();
+        var buttonText = $(this).text() === "Busca Avançada" ? "Busca Simples" : "Busca Avançada";
+        $(this).text(buttonText);
+    });
+
+    $(".btn-mais").click(function(){
+        var buttonText = $(this).text() === "Mostrar mais" ? "Mostrar menos" : "Mostrar mais";
+        $(this).text(buttonText);
+        
+    });
+
+    $(document).on("click", '.add-metrics', function() {
+        let work_id = $(this).data('id');
+        let link = $(this).attr('href');
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            url: `/index.php?option=com_pbuscador&task=addMetrics&work_id=${work_id}&link=${link}`
+        });
+
+    })
+
+    $(document).on("click", '.favorito', function() {
+        let idItem = $(this).data('item');
+        let objeto = this;
+        $(`#result-busca-load-${idItem}`).removeClass("d-none");
+        $(`#conteudo-${idItem}`).addClass("d-none");
+        let id = $(this).data('id');
+        let action = $(this).data('action');
+        let source = $(this).data('source');
+        let vse = $(this).data('vse');
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            url: `/index.php?option=com_pbuscador&task=favorite&vse=${vse}&id=${id}&action=${action}&source=${source}`,
+            success: function(data) {
+                $(`#result-busca-load-${idItem}`).addClass("d-none");
+                $(`#conteudo-${idItem}`).removeClass("d-none");
+                if(data.code != 'error'){
+                    $(objeto).toggleClass('fa far');
+                }
+                renderMessages({
+                    message: data.response,
+                    type: data.code,
+                    title: 'Meus Favoritos'
+                });
+            },
+            error: function(data) {
+                $(`#result-busca-load-${idItem}`).addClass("d-none");
+                $(`#conteudo-${idItem}`).removeClass("d-none");
+                renderMessages({
+                    message: data.response,
+                    type: data.code,
+                    title: 'Meus Favoritos'
+                });
+            }
+        });
+
+        
+    })
+
+    function renderMessages(data){
+        var backgroundColor = '';
+        if(data.type == 'error'){
+            backgroundColor = '#ff0000';
+        }
+        var toastHtml = `
+            <div style="position: fixed; top: 15px; right: 15px;">
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="7000">
+                    <div class="toast-header" style="background-color:${backgroundColor}; border-bottom:${backgroundColor};">
+                        <strong class="mr-auto">${data.title}</strong>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        <p>${data.message}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        document.body.insertAdjacentHTML('beforeend', toastHtml);
+
+        $('.toast').toast('show');
+    }
+
+    function _html_metrics_watson(metric, title){
+        var html_metrics_watson = '';
+        if(metric){
+            html_metrics_watson = `
+                <div class="col border-right text-center">
+                    <h5 class="font-light">${metric}</h5>
+                    <h6 class="text-uppercase">${title}</h6>
+                </div>`
+            ;
+        }
+        return html_metrics_watson;
+    }
+
+    $(document).on("change", '.ano', function() {
+        if($('#filtro-ano').hasClass('invisible')){
+            $("#filtro-ano").removeClass('invisible');
+            $("#filtro-ano").addClass('visible');
+        }
+    })
+
+    $(document).on("click", '#filtro-ano', function() {
+        buscaAvancada();
+        $( "#faceta" ).submit();
+    })
+
+    $(document).on("click", '.page-buscador', function() {
+        var $this = $(this);
+
+        if($this.attr("data-page") == 0){
+            $( "#faceta" ).submit();
+        }
+
+        buscaAvancada();
+
+        $( "#faceta" ).append('<input type="hidden" name="page" value="'+$this.attr("data-page")+'">');
+        $( "#faceta" ).submit();
+    })
+
+    $(document).on("click", '.box-faceta-active', function() {
+        var facetas = $(this).attr("data-faceta").split(`\n`);
+        var tipo = $(this).attr("data-type");
+        var mapeamento = {};
+        var includeFaceta = [];
+        facetas.forEach(function(item) {
+            var partes = item.split("==");
+            var chave = partes[0];
+            var valor = partes[1];
+
+            if (valor !== undefined &&  tipo !== chave && !includeFaceta.includes(item)) {
+                includeFaceta.push(item);
+                $( "#faceta" ).append('<input type="hidden" name="'+chave+'[]" value="'+item+'">');
+            }
+        });
+        $("#faceta input[type='checkbox'], #faceta input[type='radio']").prop("checked", false);
+        $( "#faceta").submit();
+    })
+
+    $(document).on("click", '.limpar-faceta-active', function() {
+        $( "#busca").submit();
+    })
+
+    $('#expandir-resultados').change(function(){
+        if ($(this).prop('checked')) {
+            $('#source').val('expanded');
+        } else {
+            $('#source').val('');
+        }
+        $( "#faceta").submit();
+    });
+
+    $(document).on("click", '.limpar-busca', function() {
+        loading();
+        location.reload();
+    })
+    
+})
+</script>
+              </div>
+            </div>
+                                  </div>
+        </div>
+            <!-- Busca Assunto -->
+            <!-- Navegação Cruzada -->
+            <!-- bg periodicos -->
+      <div class="row bg-periodicos"></div>
+      <!-- Menu footer -->
+      <div class="row bg-white menu-footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-12 d-sm-none d-md-block navegue-menu mb-4">
+              <p class="h4 text-dark" tabindex="0"><i class="fas fa-location-arrow"></i> Navegue </p>
+                <ul class="nav menu mod-list">
+<li class="item-663"><a href="/index.php/sobre/quem-somos.html" >Sobre</a></li><li class="item-664"><a href="/index.php/buscador-primo.html" >Acervo</a></li><li class="item-665"><a href="/index.php/treinamentos/calendário.html" >Treinamentos</a></li><li class="item-666"><a href="/index.php/informativos.html" >Informativos</a></li></ul>
+
+            </div>
+            <div class="col-md-3 col-12 d-sm-none d-md-block navegue-menu mb-4">
+              <p class="h4 text-dark" tabindex="0"><i class="fas fa-comment fa-flip-horizontal"></i> Ajuda </p>
+                <ul class="nav menu mod-list">
+<li class="item-667"><a href="/index.php/ajuda/perguntas-frequentes.html" >Perguntas frequentes</a></li><li class="item-668"><a href="/index.php/ajuda/suporte-regional.html" >Suporte regional</a></li><li class="item-669"><a href="/index.php/ajuda/fale-conosco.html" >Fale conosco</a></li></ul>
+
+            </div>
+            <div class="col-md-6">
+              <p class="h4 text-dark mb-3" tabindex="0"><i class="fas fa-map-marker-alt"></i> Endereço </p>
+              <p class="lead ml-4 endereco" tabindex="0">
+                Setor Bancário Norte (SBN), Quadra 2, Bloco L, Lote 06, Edifício CAPES.<br> Brasília, DF<br>
+                CEP: 70.040-031
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <div class="float-right social-media">
+                                                                              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="float-right"><small class="text-muted" tabindex="0">© 2020. Todos os direitos reservados.</small><a href="/index.php/termo-uso.html" class="ml-3 termo-uso">Termos de Uso</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Alerta para notificar o usuario sobre a politica de cookies -->
+      <div class="alert text-center cookie-alerta" role="alert">
+          Usamos cookies para fornecer uma melhor experiência ao usuário no acesso ao Portal de Periódicos da CAPES, conforme nossa <a href="/index.php/politica-cookies.html" class="link-alerta-cookies aceitar-cookies-conheca">política</a> e, ao continuar navegando, você concorda com essas condições.
+          <a class="btn btn-outline-light aceitar-cookies-entendi">
+              Entendi
+          </a>
+      </div>
+
+      <!-- footer -->
+      <footer class="row bg-padrao footer d-flex">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 co-sm-6 col-md-6 col-lg-8">
+              <a target="_blank" href="https://www.gov.br/acessoainformacao/pt-br">
+                <img src="/templates/periodicos_v3/images/logo-acesso-a-informacao.png" height="36" alt="Acesso a Informação Governo Federal">
+              </a>
+              <a target="_blank" href="https://www.gov.br/capes/pt-br/acesso-a-informacao/sei">
+                <img class="px-md-4" src="/templates/periodicos_v3/images/logo-sei.png" height="29" alt="Sei! CAPES">
+              </a>
+              <a target="_blank" href="https://falabr.cgu.gov.br/publico/Manifestacao/SelecionarTipoManifestacao.aspx?ReturnUrl=%2f">
+                <img src="/templates/periodicos_v3/images/logo-fala-br.png" height="40" alt="Fala br Governo Federal">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <div class="row">
+                  <div class="col-12 col-sm-4">
+                    <a target="_blank" href="https://www.gov.br/capes/pt-br">
+                      <img class="img-fluid" src="/templates/periodicos_v3/images/logo-capes.png" alt="Acesso a CAPES">
+                    </a>
+                  </div>
+                              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="back-top hide"><i class="fa fa-angle-double-up" aria-hidden="true"></i> Voltar ao topo</div>
+    </div>
+	<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const icons = document.querySelectorAll('.icon');
+
+      icons.forEach(icon => {
+        icon.addEventListener('click', () => {
+          // Alterna a classe "active" para marcar/desmarcar
+          icon.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+  </body>
+      <script src="/templates/periodicos_v3/js/cookieAlerta.js"></script>
+  <!-- Google Analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSV7MH35Q7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DSV7MH35Q7');
+  </script>
+  <!-- Piwik
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//webstats.periodicos.capes.gov.br/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//webstats.periodicos.capes.gov.br/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+  End Piwik Code -->
+
+</html>

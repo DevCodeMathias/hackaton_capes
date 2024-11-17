@@ -1,0 +1,1019 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+  <head>
+    <base href="https://www.periodicos.capes.gov.br/" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Joomla! - Open Source Content Management" />
+    <title>Portal .periodicos. CAPES - Portal .periodicos. CAPES</title>
+    <link href="/templates/periodicos_v3/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- icons -->
+    <link rel="stylesheet" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/css/multi-select.css" media="screen" type="text/css">
+    <link rel='stylesheet' href='https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/fullcalendar/lib/main.css'>
+    <link rel="stylesheet" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/bootstrap-datepicker/css/bootstrap-datepicker.css">
+    <link rel="search" href="https://www.periodicos.capes.gov.br/" title="Buscar neste site" />
+    
+    <link rel="stylesheet" type="text/css" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/css/bootstrap-drawer.css">
+    
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/select2/4.1.0/css/select2.min.css">
+    <link rel="stylesheet" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/select2-bootstrap4-theme/css/select2-bootstrap4.css">
+    
+    <meta name="theme-color" content="#1c1c5c" />
+    <link rel="stylesheet" href="https://www.periodicos.capes.gov.br/templates/periodicos_v3/css/main.css" />
+    
+    <style>
+      /* Autocomplete Suggestions Container */
+      .autocomplete-suggestions {
+        position: absolute;
+        top: 100%;
+        left: 15px; /* Align with input */
+        right: 15px;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        z-index: 1000;
+        margin-top: 5px;
+      }
+    
+      .autocomplete-suggestion {
+        padding: 12px 15px;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: center;
+      }
+    
+      .autocomplete-suggestion:hover {
+        background-color: #f8f9fa;
+      }
+    
+      .autocomplete-suggestion:last-child {
+        border-bottom: none;
+      }
+    
+      /* Add to existing styles section */
+      .filter-blocks {
+        margin-top: 10px;
+        padding: 15px;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+    
+      .filter-section {
+        margin-bottom: 15px;
+      }
+    
+      .filter-section h4 {
+        color: #1c1c5c;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+    
+      .filter-option {
+        display: inline-flex;
+        align-items: center;
+        background: #f5f5f5;
+        padding: 5px 10px;
+        border-radius: 4px;
+        margin: 0 5px 5px 0;
+        cursor: pointer;
+      }
+    
+      .delete-filter {
+        margin-left: 8px;
+        color: #666;
+        cursor: pointer;
+      }
+    
+      .delete-filter:hover {
+        color: #f16421;
+      }
+    
+      /* Carousel specific styles */
+      .carousel-item img {
+        max-height: 400px;
+        object-fit: cover;
+      }
+    
+      .carousel-indicators {
+        bottom: 0;
+      }
+    
+      .carousel-indicators li {
+        background-color: #1c1c5c;
+      }
+    
+      /* Update the carousel control styles */
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(28, 28, 94, 0.5);
+        border-radius: 50%;
+        opacity: 0.7;
+      }
+    
+      .carousel-control-prev {
+        left: 10px;
+      }
+    
+      .carousel-control-next {
+        right: 10px;
+      }
+    
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+      }
+    
+      /* Optional hover effect */
+      .carousel-control-prev:hover,
+      .carousel-control-next:hover {
+        opacity: 1;
+      }
+    </style>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/js/jquery-3.6.0.min.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/popper/1.14.3/js/popper.min.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/js/jquery.multi-select.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/jquery-mask/1.14.10/js/jquery.mask.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/js/fieldMaskValidation.js"></script>
+    <!-- Select2 Javascript -->
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/select2/4.1.0/js/select2.min.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/lib/select2/4.1.0/js/i18n/pt-BR.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/js/drawer.min.js"></script>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/js/main.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Set color template
+        document.body.style.setProperty('--cor-padrao-1', 'rgba(28, 28, 94, 1)');
+        document.body.style.setProperty('--cor-padrao-2', 'rgba(241, 100, 33, 1)');
+        
+        // Update carousel initialization
+        $('#highlightsCarousel').carousel({
+          interval: 5000  // Change to 5 seconds
+        });
+        
+        // Modify form submission handler
+        $('#busca').on('submit', function(e) {
+          e.preventDefault(); // Prevent default form submission
+          
+          // Get current search terms
+          const searchTerms = $('#input-busca-primo').val();
+          
+          // Check if specific combination is selected
+          if (searchTerms.includes('Eraldo Guerra') && searchTerms.includes('Exatas')) {
+            // Redirect to specific URL for this combination
+            window.location.href = 'https://pablodiego.com.br/brunno/capes/pesquisa.html';
+          } else {
+            // Default form submission for other combinations
+            this.submit();
+          }
+        });
+      });
+    </script>
+    <script>
+      $(function(){
+        const filterData = {
+          authors: [
+            'Eraldo Guerra',
+            'Eraldo Oliveira', 
+            'Eraldo Filho'
+          ],
+          areas: [
+            'Humanas',
+            'Exatas',
+            'Saúde'  
+          ],
+          themes: [
+            'A Era do Gelo',
+            'Herança Genética'
+          ]
+        };
+
+        const $searchInput = $('#input-busca-primo');
+        const $filterContainer = $('<div class="filter-blocks" style="display:none;"></div>');
+        
+        // Add filter container after search input
+        $searchInput.parent().after($filterContainer);
+        
+        // Track selected filters
+        const selectedFilters = {
+          authors: new Set(),
+          areas: new Set(),
+          themes: new Set()
+        };
+
+        function updateSearchInput() {
+          const allFilters = [
+            ...Array.from(selectedFilters.authors),
+            ...Array.from(selectedFilters.areas), 
+            ...Array.from(selectedFilters.themes)
+          ];
+          $searchInput.val(allFilters.join(', '));
+          
+          // Enable/disable form submission based on selected filters
+          const hasEraldoGuerra = selectedFilters.authors.has('Eraldo Guerra');
+          const hasExatas = selectedFilters.areas.has('Exatas');
+          
+          if (hasEraldoGuerra && hasExatas) {
+            $('#btn-busca-primo').addClass('special-combo');
+          } else {
+            $('#btn-busca-primo').removeClass('special-combo');
+          }
+        }
+
+        function renderFilters() {
+          $filterContainer.empty();
+          
+          // Authors section
+          const $authorsSection = $('<div class="filter-section"><h4>Autor:</h4></div>');
+          filterData.authors.forEach(author => {
+            const $option = $('<div class="filter-option"></div>')
+              .text(author)
+              .append(
+                $('<i class="fas fa-trash delete-filter"></i>').on('click', (e) => {
+                  e.stopPropagation();
+                  selectedFilters.authors.delete(author);
+                  updateSearchInput();
+                  renderFilters();
+                  
+                  // Open chatbot when trash icon is clicked
+                  if (window.Typebot) {
+                    window.Typebot.open();
+                  }
+                })
+              )
+              .on('click', () => {
+                selectedFilters.authors.add(author);
+                updateSearchInput();
+              });
+            
+            $authorsSection.append($option);
+          });
+          
+          // Areas section  
+          const $areasSection = $('<div class="filter-section"><h4>Área:</h4></div>');
+          filterData.areas.forEach(area => {
+            const $option = $('<div class="filter-option"></div>')
+              .text(area)
+              .append(
+                $('<i class="fas fa-trash delete-filter"></i>').on('click', (e) => {
+                  e.stopPropagation();
+                  selectedFilters.areas.delete(area);
+                  updateSearchInput();
+                  renderFilters();
+                  
+                  // Open chatbot
+                  if (window.Typebot) {
+                    window.Typebot.open();
+                  }
+                })
+              )
+              .on('click', () => {
+                selectedFilters.areas.add(area);
+                updateSearchInput();
+              });
+            
+            $areasSection.append($option);
+          });
+
+          // Themes section
+          const $themesSection = $('<div class="filter-section"><h4>Tema:</h4></div>');
+          filterData.themes.forEach(theme => {
+            const $option = $('<div class="filter-option"></div>')
+              .text(theme)
+              .append(
+                $('<i class="fas fa-trash delete-filter"></i>').on('click', (e) => {
+                  e.stopPropagation();
+                  selectedFilters.themes.delete(theme);
+                  updateSearchInput();
+                  renderFilters();
+                  
+                  // Open chatbot
+                  if (window.Typebot) {
+                    window.Typebot.open();
+                  }
+                })
+              )
+              .on('click', () => {
+                selectedFilters.themes.add(theme);
+                updateSearchInput();
+              });
+            
+            $themesSection.append($option);
+          });
+
+          $filterContainer.append($authorsSection, $areasSection, $themesSection);
+        }
+
+        $searchInput.on('input', function() {
+          const query = $(this).val().trim().toLowerCase();
+          
+          if (query === 'eral') {
+            renderFilters();
+            $filterContainer.show();
+          } else {
+            $filterContainer.hide();
+          }
+        });
+
+        // Hide filters when clicking outside
+        $(document).on('click', function(e) {
+          if (!$(e.target).closest('.filter-blocks').length && 
+              !$(e.target).closest('#input-busca-primo').length) {
+            $filterContainer.hide();
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <script type="module">
+      import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3.12/dist/web.js'
+      
+      window.addEventListener('load', function() {
+        window.Typebot = Typebot;
+        Typebot.initBubble({
+          typebot: "lattes",
+          apiHost: "https://viewer.2n4p3z.easypanel.host", 
+          previewMessage: {
+            message: "Olá, me chamo Cézar Lattes !",
+            autoShowDelay: 5000,
+            avatarUrl: "https://storage.torrenet-typebot-minio.2n4p3z.easypanel.host/typebot/public/workspaces/clyh4ortp001ucrt7ruytioax/typebots/cm3ljw49f001j11czl1ahmi0x/hostAvatar?v=1731846887330",
+          },
+          theme: {
+            button: { backgroundColor: "#0042DA" },
+            chatWindow: { backgroundColor: "#171923" },
+          },
+        });
+      });
+    </script>
+    
+    <div class="container-fluid bg-white">
+      <div class="container">
+        <div class="row align-items-center barra-gov-br">
+          <div class="col-4">
+            <div class="row align-items-center">
+              <div class="col">
+                <a href="https://www.gov.br" target="_blank" class="logo-barra-gov-br">
+                  <img src="https://www.periodicos.capes.gov.br/images/govbr-logo-large.png" class="img-fluid" alt="Logo do Governo Federal" width="200" height="50">
+                </a>
+              </div>
+              <div class="col-8 d-none d-md-none d-lg-block">
+                <a href="https://www.gov.br/capes" target="_blank" class="barra-gov-br-nome-orgao">
+                  Ministério da Educação/CAPES
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <nav class="bg-white">
+              <ul class="nav justify-content-end align-items-center">
+                <li class="barra-gov-br-nav-item d-none d-md-none d-lg-block">
+                  <a class="barra-gov-br-nav-link" href="https://www.gov.br/pt-br/orgaos-do-governo" target="_blank">Órgãos do Governo</a>
+                </li>
+                <li class="barra-gov-br-nav-item d-none d-md-none d-lg-block">
+                  <a class="barra-gov-br-nav-link" href="https://www.gov.br/acessoainformacao/pt-br" target="_blank">Acesso à Informação</a>
+                </li>
+                <li class="barra-gov-br-nav-item d-none d-md-none d-lg-block">
+                  <a class="barra-gov-br-nav-link" href="http://www4.planalto.gov.br/legislacao" target="_blank">Legislação</a>
+                </li>
+                <li class="barra-gov-br-nav-item d-none d-md-none d-lg-block">
+                  <a class="barra-gov-br-nav-link" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital" target="_blank">Acessibilidade</a>
+                </li>
+                <li class="barra-gov-br-nav-item">
+                  <a class="barra-gov-br-nav-link contraste" href="https://www.example.com/contrast" target="_blank"><i class="fas fa-adjust"></i></a>
+                </li>
+                <li class="barra-gov-br-nav-item">
+                  <a class="btn barra-gov-br-btn-entrar btn-sm w-100" href="https://acesso.gov.br" role="button" target="_blank"><i class="fas fa-user"></i> Entrar</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <header class="row shadow-sm">
+        <div class="container mx-top-header">
+          <div class="row align-items-center">
+            <div class="col-2 col-sm-1 d-block d-lg-none">
+              <a class="navbar-toggler" href="#drawerMenu" data-toggle="drawer" data-target="#drawerMenu" aria-controls="drawerMenu" aria-label="Toggle navigation">
+                <span class="fas fa-align-justify"></span>
+              </a>
+            </div>
+            <div class="logos-principais col-10 col-sm-9 col-lg-4">
+              <div class="row align-items-center">
+                <div class="col-5">
+                  <a target="_blank" href="https://www.gov.br/capes/pt-br" title="Coordenação de Aperfeiçoamento de Pessoal de Nível Superior" style="text-decoration:none">
+                    <img class="img-fluid logo-capes" src="https://www.periodicos.capes.gov.br/images/logocapes2.png" alt="Logo CAPES" width="150" height="50">
+                  </a>
+                </div>
+                <div class="col">
+                  <a target="_self" href="/" title="Voltar para a página inicial" style="text-decoration:none">
+                    <img class="img-fluid logo-periodicos" src="https://www.periodicos.capes.gov.br/images/logo_periodicos-simples2.jpg" alt="Portal de Periódicos da CAPES" width="200" height="100">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-7 col-lg-6 d-none d-md-none d-lg-block">
+              <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse justify-content-end menu-horizontal" id="navbarNav">
+                  <ul class="nav menu mod-list">
+                    <li class="item-646 deeper parent">
+                      <a href="https://www.periodicos.capes.gov.br/index.php/sobre.html">Sobre</a>
+                      <ul class="nav-child unstyled small">
+                        <li class="item-722"><a href="https://www.periodicos.capes.gov.br/index.php/acessoaberto.html">Acesso Aberto</a></li>
+                        <li class="item-647"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/quem-somos.html">Quem somos</a></li>
+                        <li class="item-652"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/missao-e-objetivos.html">Missão e objetivos</a></li>
+                        <li class="item-653"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/nossa-historia.html">Nossa história</a></li>
+                        <li class="item-654"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/quem-participa.html">Quem participa</a></li>
+                        <li class="item-655"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/parceiros.html">Parceiros</a></li>
+                        <li class="item-656"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/documentacao.html">Documentação</a></li>
+                        <li class="item-657"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/conteudo-contratado.html">Contratos</a></li>
+                      </ul>
+                    </li>
+                    <li class="item-648 deeper parent">
+                      <a href="https://www.periodicos.capes.gov.br/index.php/acervo.html">Acervo</a>
+                      <ul class="nav-child unstyled small">
+                        <li class="item-699"><a href="https://www.periodicos.capes.gov.br/index.php/acervo/buscador.html">Buscar assunto</a></li>
+                        <li class="item-700"><a href="https://www.periodicos.capes.gov.br/index.php/acervo/lista-a-z-bases.html">Lista de bases e coleções</a></li>
+                        <li class="item-701"><a href="https://www.periodicos.capes.gov.br/index.php/acervo/lista-a-z-livros.html">Lista de livros</a></li>
+                        <li class="item-702"><a href="https://www.periodicos.capes.gov.br/index.php/acervo/lista-a-z-periodicos.html">Lista de periódicos</a></li>
+                      </ul>
+                    </li>
+                    <li class="item-649 deeper parent">
+                      <a href="https://www.periodicos.capes.gov.br/index.php/treinamentos.html">Treinamentos</a>
+                      <ul class="nav-child unstyled small">
+                        <li class="item-658"><a href="https://www.periodicos.capes.gov.br/index.php/treinamentos/calend%C3%A1rio.html">Calendário</a></li>
+                        <li class="item-659"><a href="https://www.periodicos.capes.gov.br/index.php/treinamentos/material-didatico.html">Materiais de apoio</a></li>
+                      </ul>
+                    </li>
+                    <li class="item-650"><a href="https://www.periodicos.capes.gov.br/index.php/informativos.html">Informativos</a></li>
+                    <li class="item-651 deeper parent">
+                      <a href="https://www.periodicos.capes.gov.br/index.php/ajuda.html">Ajuda</a>
+                      <ul class="nav-child unstyled small">
+                        <li class="item-660"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/perguntas-frequentes.html">Perguntas frequentes</a></li>
+                        <li class="item-661"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/suporte-regional.html">Suporte regional</a></li>
+                        <li class="item-662"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/fale-conosco.html">Fale conosco</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col">
+              <script>
+                $(document).ready(function() {
+                  $('[data-toggle="tooltip"]').tooltip();
+
+                  $('.bt-meu-espaco-lembrar').click(function(){
+                    if($("#body-login").hasClass("show")){
+                      $("#body-login").removeClass("show").addClass("hidden");
+                      $("#body-lembrar").removeClass("hidden").addClass("show");
+                    } else {
+                      $("#body-login").removeClass("hidden").addClass("show");
+                      $("#body-lembrar").removeClass("show").addClass("hidden");
+                    }
+                  });
+                  $('.bt-meu-espaco-receber').click(function(){
+                    if($("#body-login").hasClass("show")){
+                      $("#body-login").removeClass("show").addClass("hidden");
+                      $("#body-receber").removeClass("hidden").addClass("show");
+                    } else {
+                      $("#body-login").removeClass("hidden").addClass("show");
+                      $("#body-receber").removeClass("show").addClass("hidden");
+                    }
+                  });
+                  $('.sair').click(function(){
+                    location.href='https://www.periodicos.capes.gov.br/index.php?option=com_users&task=user.logout&c8fdc3cb21759cdf784cc464cda73833=1';
+                  });
+                });
+              </script>
+    
+              <div class="dropdown">
+                <a
+                  role="button"
+                  data-message="Botão para realizar o login no meu espaço"
+                  id="bt-meu-espaco-login"
+                  class="btn btn-outline-padrao py-2 float-right"
+                  data-toggle="dropdown"
+                  href="https://www.periodicos.capes.gov.br/meu-espaco"
+                  aria-haspopup="true" 
+                  aria-expanded="false">Meu espaço
+                </a>
+                <div class="border-0 shadow-sm dropdown-menu-right dropdown-menu dropdown-menu-lg-left" aria-labelledby="bt-meu-espaco-login" role="alert" aria-live="assertive" aria-atomic="true" id="card-login">
+                  <!-- Fazer o Login -->
+                  <div class="card-body" id="body-login">
+                    <h5 class="card-title mb-4 mt-4">Entrar</h5>
+                    <form id="form-login" name="frmLogin" action="https://www.periodicos.capes.gov.br/index.php/component/users/?task=user.login&amp;Itemid=645" method="post">
+                      <input type="hidden" name="c8fdc3cb21759cdf784cc464cda73833" value="1" />
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label class="sr-only" for="usuario">Nome do usuário</label>
+                          <div class="inner-addon left-addon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="username" class="form-control mb-3 border-0 bg-input-login" id="usuario" placeholder="Nome do usuário" required>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <label class="sr-only" for="senha">Senha</label>
+                          <div class="inner-addon left-addon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" class="form-control mb-3 border-0 bg-input-login" id="senha" placeholder="Senha" required>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <small><a href="https://www.periodicos.capes.gov.br/lembrar-senha" class="bt-meu-espaco-lembrar" title="Esqueci minha senha">Esqueci minha senha</a></small>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="btn btn-primary mb-2 w-100" data-message="Botão para Entrar">Entrar</button>
+                          <small>Não possui acesso? <a href="https://www.periodicos.capes.gov.br/meu-espaço/registre-se.html" target="_self">Registre-se</a></small> <br>
+                          <small><a href="https://www.periodicos.capes.gov.br/receber-email-confirmacao" class="bt-meu-espaco-receber" title="Não recebi o e-mail de confirmação de cadastro">Não recebi o e-mail de confirmação de cadastro</a></small>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Lembrar Senha -->
+                  <div class="card-body hidden" id="body-lembrar" aria-atomic="true">
+                    <a href="https://www.periodicos.capes.gov.br/login" class="bnt-voltar bt-meu-espaco-lembrar" title="Voltar para o login">
+                      <small><i class="fas fa-arrow-circle-left"></i> Voltar</small>
+                    </a>
+                    <h5 class="card-title mb-4 mt-4">Lembrar minha senha</h5>
+                    <form name="frmNews" class="form-inline" action="https://www.periodicos.capes.gov.br/lembrar-senha" method="post">
+                      <input type="hidden" name="option" value="com_plogin" />
+                      <input type="hidden" name="controller" value="Lembrar" />
+                      <input type="hidden" name="task" value="remember" />
+                      <input type="hidden" name="view" value="ploginlembrar" />
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label class="sr-only" for="lembrar-email">Digite o seu e-mail</label>
+                          <div class="inner-addon left-addon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="username" class="form-control mb-3 border-0 bg-input-login w-100" id="lembrar-email" placeholder="Digite o seu e-mail" required>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2 w-100" value="Enviar" data-message="Botão para Lembrar minha senha">Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Receber email de confirmação -->
+                  <div class="card-body hidden" id="body-receber" aria-atomic="true">
+                    <a href="https://www.periodicos.capes.gov.br/login" class="bnt-voltar bt-meu-espaco-receber" title="Voltar para o login">
+                      <small><i class="fas fa-arrow-circle-left"></i> Voltar</small>
+                    </a>
+                    <h5 class="card-title mb-4 mt-4">Receber meu e-mail de confirmação</h5>
+                    <form name="frmResendLink" class="form-inline" action="https://www.periodicos.capes.gov.br/resend-confirmation" method="post">
+                      <input type="hidden" name="c8fdc3cb21759cdf784cc464cda73833" value="1" />
+                      <input type="hidden" name="option" value="com_plogin" />
+                      <input type="hidden" name="controller" value="Resendnew" />
+                      <input type="hidden" name="return" value="" />
+                      <input type="hidden" name="task" value="resendactivation" />
+                      <input type="hidden" name="gid" value="0" />
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label class="sr-only" for="receber-email">E-mail de usuário</label>
+                          <div class="inner-addon left-addon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" class="form-control mb-3 border-0 bg-input-login w-100" id="receber-email" placeholder="E-mail de usuário" required>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2 w-100" value="Enviar" data-message="Botão para Receber meu e-mail de confirmação">Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="drawerMenu" class="drawer drawer-left dw-xs-8 dw-sm-4 dw-md-4 fold" aria-labelledby="drawerMenu">
+              <div class="drawer-contents">
+                <div class="drawer-heading">
+                  <div class="page-header">
+                    <a href="https://www.periodicos.capes.gov.br/drawerMenu" data-toggle="drawer" aria-controls="drawerMenu" class="bnt-voltar">
+                      <p class="h2 text-right"><i class="fas fa-times"></i></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="drawer-body">
+                  <ul class="nav menu mod-list">
+                    <li class="item-646 deeper parent">
+                      <a href="https://www.periodicos.capes.gov.br/sobre.html">Sobre</a>
+                      <ul class="nav-child unstyled small">
+                        <li class="item-722"><a href="https://www.periodicos.capes.gov.br/index.php/acessoaberto.html">Acesso Aberto</a></li>
+                        <li class="item-647"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/quem-somos.html">Quem somos</a></li>
+                        <li class="item-652"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/missao-e-objetivos.html">Missão e objetivos</a></li>
+                        <li class="item-653"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/nossa-historia.html">Nossa história</a></li>
+                        <li class="item-654"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/quem-participa.html">Quem participa</a></li>
+                        <li class="item-655"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/parceiros.html">Parceiros</a></li>
+                        <li class="item-656"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/documentacao.html">Documentação</a></li>
+                        <li class="item-657"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/conteudo-contratado.html">Contratos</a></li>
+                      </ul>
+                    </li>
+                    <li class="item-648 deeper parent">
+                      <a href="https://www.periodicos.capes.gov.br/acervo.html">Acervo</a>
+                      <ul class="nav-child unstyled small">
+                        <li class="item-699"><a href="https://www.periodicos.capes.gov.br/index.php/acervo/buscador.html">Buscar assunto</a></li>
+                        <li class="item-700"><a href="https://www.periodicos.capes.gov.br/index.php/acervo/lista-a-z-bases.html">Lista de bases e coleções</a></li>
+                        <li class="item-701"><a href="https://www.periodicos.capes.gov.br/index.php/acervo/lista-a-z-livros.html">Lista de livros</a></li>
+                        <li class="item-702"><a href="https://www.periodicos.capes.gov.br/index.php/acervo/lista-a-z-periodicos.html">Lista de periódicos</a></li>
+                      </ul>
+                    </li>
+                    <li class="item-649 deeper parent">
+                      <a href="https://www.periodicos.capes.gov.br/treinamentos.html">Treinamentos</a>
+                      <ul class="nav-child unstyled small">
+                        <li class="item-658"><a href="https://www.periodicos.capes.gov.br/index.php/treinamentos/calend%C3%A1rio.html">Calendário</a></li>
+                        <li class="item-659"><a href="https://www.periodicos.capes.gov.br/index.php/treinamentos/material-didatico.html">Materiais de apoio</a></li>
+                      </ul>
+                    </li>
+                    <li class="item-650"><a href="https://www.periodicos.capes.gov.br/index.php/informativos.html">Informativos</a></li>
+                    <li class="item-651 deeper parent">
+                      <a href="https://www.periodicos.capes.gov.br/ajuda.html">Ajuda</a>
+                      <ul class="nav-child unstyled small">
+                        <li class="item-660"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/perguntas-frequentes.html">Perguntas frequentes</a></li>
+                        <li class="item-661"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/suporte-regional.html">Suporte regional</a></li>
+                        <li class="item-662"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/fale-conosco.html">Fale conosco</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Acesso CAFe -->
+            <div class="row mt-3 mb-3 align-items-center">
+              <div class="col-10 col-md-11">
+                <p class="small mb-0" tabindex="0">
+                  Você tem acesso ao conteúdo gratuito do Portal de Periódicos da CAPES<br>
+                </p>
+                <div class="dropdown">
+                  <a href="https://www.periodicos.capes.gov.br/acesso-cafe.html" class="dropdown-toggle" role="button" id="dropdownCafe" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acesso CAFe</a>
+                  <div class="dropdown-menu p-4 text-muted" id="dropdownCafeDescricao" aria-labelledby="dropdownCafe">
+                    <p>Sua pesquisa será realizada no conteúdo gratuito disponível no acervo do Portal de Periódicos da CAPES. O conteúdo assinado com as editoras científicas está disponível para os IPs identificados das instituições participantes. Caso você esteja acessando fora da rede da sua instituição, é necessário efetuar o login na Comunidade Acadêmica Federada (CAFe).</p>
+                    <a href="https://www.periodicos.capes.gov.br/acesso-cafe.html" class="btn btn-outline-padrao p-2 w-100">
+                      <i class="fas fa-coffee"></i> Acesso CAFe
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </header>
+
+      <!-- Busca e Destaques -->
+      <div class="row bg-busca-img p-3">
+        <div class="container mp">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 col-12 col-sm-12">
+
+              <div class="area-busca mb-5">
+                <div class="position-relative">
+                  <form action="https://www.periodicos.capes.gov.br/index.php/acervo/buscador.html" method="GET" id="busca" class="busca">
+                    <div class="input-group-prepend">
+                      <span class="input-text-busca"><strong>Olá.</strong></span>
+                    </div>
+                    <button type="submit" class="btn" id="btn-busca-primo" value="Submit"><i class="fas fa-search"></i></button>
+                    <input name="q" type="search" id="input-busca-primo" class="form-control" placeholder="O que você está procurando?" required autocomplete="off">
+                    <!-- Autocomplete Suggestions Container -->
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-12 col-sm-12 border-right mb-3">
+              <div class="custom">
+                <p class="h3">Aqui você encontra conteúdo científico diversificado para deixar sua pesquisa ainda melhor.</p>
+                <p>Desde livros, normas técnicas, patentes e estatísticas até vídeos e áudios reunidos em um só lugar.</p>
+                <p><a class="btn btn-outline-padrao p-2" href="https://www.periodicos.capes.gov.br/index.php/sobre/quem-somos.html" target="_self">Saiba mais</a></p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 col-sm-12 mb-3">
+              <div class="row">
+                <div class="col-md-10"><h3 class="text-dark">Destaques</h3></div>
+              </div>
+
+              <div id="highlightsCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#highlightsCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#highlightsCarousel" data-slide-to="1"></li>
+                  <li data-target="#highlightsCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Carousel slides -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img 
+                      src="https://pablodiego.com.br/brunno/capes/1.jpeg"
+                      class="d-block w-100"
+                      alt="A banner advertises a service to connect researchers in the same field. The text is in Portuguese. The ad features a diverse group of smiling researchers standing together in a professional setting."
+                    >
+                  </div>
+                  <div class="carousel-item">
+                    <img 
+                      src="https://pablodiego.com.br/brunno/capes/2.jpeg"
+                      class="d-block w-100" 
+                      alt="A Portuguese language advertisement announcing easier access to favorite articles. Features new organization tools and content discovery options."
+                    >
+                  </div>
+                  <div class="carousel-item">
+                    <img 
+                      src="https://pablodiego.com.br/brunno/capes/3.jpeg"
+                      class="d-block w-100"
+                      alt="A blue banner advertises a virtual assistant named César Lattes, using AI. Features a stylized portrait and call to action button."
+                    >
+                  </div>
+                </div>
+
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#highlightsCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#highlightsCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Treinamentos -->
+      <div class="row bg-padrao p-3">
+        <div class="container mp">
+          <div class="custom">
+            <div class="row">
+              <div class="col-md-6">
+                <h3 class="text-light">Treinamentos</h3>
+                <hr />
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="h4 text-light">Quer aprender a pesquisar no Portal de Periódicos da CAPES?</p>
+                    <p class="text-light">Participe dos treinamentos e otimize sua busca. As inscrições são gratuitas e as turmas oferecidas por área do conhecimento, para um melhor aproveitamento dos conteúdos.</p>
+                    <p><a class="p-2 btn btn-link-fundo-padrao" href="https://www.periodicos.capes.gov.br/index.php/treinamentos/calend%C3%A1rio.html">Acesse o calendário</a></p>
+                  </div>
+                  <div class="col-lg-6 d-none d-md-none d-lg-block">
+                    <svg class="img-fluid float-right" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="300" height="200" fill="#1c1c5c" />
+                      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-size="18">Treinamentos do Portal de Periódicos da CAPES</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Informativos -->
+      <div class="row p-3">
+        <div class="container mp">
+          <section class="row mb-3">
+            <div class="col-12 col-md-6">
+              <h3 class="text-dark">Informativos</h3>
+              <hr />
+            </div>
+            <div class="col-12 col-md-5">
+              <a class="btn btn-outline-dark btn-veja-mais float-right mr-2" href="https://www.periodicos.capes.gov.br/index.php/informativos.html">Veja mais</a>
+            </div>
+          </section>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-1 text-right d-none d-sm-none d-md-block">
+                <a class="btn btn-link mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                  <i class="fas fa-angle-left icon-slide-informativo"></i>
+                </a>
+              </div>
+              <div class="col-md-10 d-none d-sm-none d-md-block">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-sm-6 col-lg-4 col-md-4 col-xs-6 mb-3">
+                          <figure class="card shadow border-0 card-informativo">
+                            <img class="card-img-top" src="https://www.periodicos.capes.gov.br/images/Matria_Journal.png" height="250" alt="Pesquisas em Ciências de Alimentos são destaques em publicação" width="300">
+                            <figcaption class="card-body">
+                              <h5 class="card-title">Pesquisas em Ciências de Alimentos são destaques em publicação</h5>
+                              <p class="card-text">Textos constam do Journal of Food Science e são resultados de estudos realizados no Brasil, Argenti ...</p>
+                              <p>14/11/2024</p>
+                              <a class="btn btn-outline-dark btn-ler-mais bt-informativos" href="https://www.periodicos.capes.gov.br/index.php/informativos/81-/4153-pesquisas-em-ciencias-de-alimentos-sao-destaques-em-publicacao.html">Ler mais</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 col-md-4 col-xs-6 mb-3">
+                          <figure class="card shadow border-0 card-informativo">
+                            <img class="card-img-top" src="https://www.periodicos.capes.gov.br/images/news/Matria_Cerimnia_CAPES_Elsevier.png" height="250" alt="CAPES e Elsevier premiam 15 cientistas mulheres" width="300">
+                            <figcaption class="card-body">
+                              <h5 class="card-title">CAPES e Elsevier premiam 15 cientistas mulheres</h5>
+                              <p class="card-text">São três vencedoras em cada região do País; em relação às áreas, são cinco de Exatas, cinco ...</p>
+                              <p>07/11/2024</p>
+                              <a class="btn btn-outline-dark btn-ler-mais bt-informativos" href="https://www.periodicos.capes.gov.br/index.php/informativos/97-/4152-capes-e-elsevier-premiam-15-cientistas-mulheres.html">Ler mais</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 col-md-4 col-xs-6 mb-3 d-none d-sm-none d-md-block">
+                          <figure class="card shadow border-0 card-informativo">
+                            <img class="card-img-top" src="https://www.periodicos.capes.gov.br/images/news/Matria_Biochemical_Society.png" height="250" alt="Treinamento discute publicação de artigo na Biochemical Society" width="300">
+                            <figcaption class="card-body">
+                              <h5 class="card-title">Treinamento discute publicação de artigo na Biochemical Society</h5>
+                              <p class="card-text">Evento promovido pela PortlandPress acontece quinta-feira às 11h ...</p>
+                              <p>06/11/2024</p>
+                              <a class="btn btn-outline-dark btn-ler-mais bt-informativos" href="https://www.periodicos.capes.gov.br/index.php/informativos/93-/4151-treinamento-discute-publicacao-de-artigo-na-biochemical-society.html">Ler mais</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-xs-6 mb-3">
+                          <figure class="card shadow border-0 card-informativo">
+                            <img class="card-img-top" src="https://www.periodicos.capes.gov.br/images/news/Treinamentos_novembro_2024.png" height="250" alt="Análise Textual, Design e Questões de Gênero são temas de cursos" width="300">
+                            <figcaption class="card-body">
+                              <h5 class="card-title">Análise Textual, Design e Questões de Gênero são temas de cursos</h5>
+                              <p class="card-text">Treinamento será nos dias 6, 14 e 18 de novembro ...</p>
+                              <p>05/11/2024</p>
+                              <a class="btn btn-outline-dark btn-ler-mais bt-informativos" href="https://www.periodicos.capes.gov.br/index.php/informativos/108-/4150-analise-textual-design-e-questoes-de-genero-sao-temas-de-cursos.html">Ler mais</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 mb-3">
+                          <figure class="card shadow border-0 card-informativo">
+                            <img class="card-img-top" src="https://www.periodicos.capes.gov.br/images/news/Matria_CAPES_Elsevier.png" height="250" alt="Cerimônia de premiação para mulheres ocorre na quarta-feira" width="300">
+                            <figcaption class="card-body">
+                              <h5 class="card-title">Cerimônia de premiação para mulheres ocorre na quarta-feira</h5>
+                              <p class="card-text">Solenidade terá início às 14h e será realizada no auditório da CAPES, com transmissão ao vivo ...</p>
+                              <p>05/11/2024</p>
+                              <a class="btn btn-outline-dark btn-ler-mais bt-informativos" href="https://www.periodicos.capes.gov.br/index.php/informativos/97-/4149-cerimonia-de-premiacao-para-mulheres-ocorre-na-quarta-feira.html">Ler mais</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 mb-3 d-none d-sm-none d-md-block">
+                          <figure class="card shadow border-0 card-informativo">
+                            <img class="card-img-top" src="https://www.periodicos.capes.gov.br/images/news/Prmio_Capes_Elsevier_2024.png" height="250" alt="Premiação reconhece pesquisadoras de todo o Brasil" width="300">
+                            <figcaption class="card-body">
+                              <h5 class="card-title">Premiação reconhece pesquisadoras de todo o Brasil</h5>
+                              <p class="card-text">As 15 cientistas selecionadas foram destaque nas áreas de Exatas, Médicas e Humanas ...</p>
+                              <p>29/10/2024</p>
+                              <a class="btn btn-outline-dark btn-ler-mais bt-informativos" href="https://www.periodicos.capes.gov.br/index.php/informativos/97-/4148-premiacao-reconhece-pesquisadoras-de-todo-o-brasil.html">Ler mais</a>
+                            </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 text-left d-none d-sm-none d-md-block">
+                <a class="btn btn-link mb-3" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                  <i class="fas fa-angle-right icon-slide-informativo"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aplicativo -->
+      <!-- Conteúdo principal -->
+      <!-- Busca Assunto -->
+      <!-- Navegação Cruzada -->
+      <!-- bg periodicos -->
+      <div class="row bg-periodicos"></div>
+      <!-- Menu footer -->
+      <div class="row bg-white menu-footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-12 d-sm-none d-md-block navegue-menu mb-4">
+              <p class="h4 text-dark" tabindex="0"><i class="fas fa-location-arrow"></i> Navegue </p>
+              <ul class="nav menu mod-list">
+                <li class="item-663"><a href="https://www.periodicos.capes.gov.br/index.php/sobre/quem-somos.html">Sobre</a></li>
+                <li class="item-664"><a href="https://www.periodicos.capes.gov.br/index.php/buscador-primo.html">Acervo</a></li>
+                <li class="item-665"><a href="https://www.periodicos.capes.gov.br/index.php/treinamentos/calend%C3%A1rio.html">Treinamentos</a></li>
+                <li class="item-666"><a href="https://www.periodicos.capes.gov.br/index.php/informativos.html">Informativos</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-12 d-sm-none d-md-block navegue-menu mb-4">
+              <p class="h4 text-dark" tabindex="0"><i class="fas fa-comment fa-flip-horizontal"></i> Ajuda </p>
+              <ul class="nav menu mod-list">
+                <li class="item-667"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/perguntas-frequentes.html">Perguntas frequentes</a></li>
+                <li class="item-668"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/suporte-regional.html">Suporte regional</a></li>
+                <li class="item-669"><a href="https://www.periodicos.capes.gov.br/index.php/ajuda/fale-conosco.html">Fale conosco</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <p class="h4 text-dark mb-3" tabindex="0"><i class="fas fa-map-marker-alt"></i> Endereço </p>
+              <p class="lead ml-4 endereco" tabindex="0">
+                Setor Bancário Norte (SBN), Quadra 2, Bloco L, Lote 06, Edifício CAPES.<br> Brasília, DF<br>
+                CEP: 70.040-031
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <div class="float-right social-media">
+                <!-- Social media icons can be added here using SVGs -->
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="float-right">
+                <small class="text-muted" tabindex="0">© 2020. Todos os direitos reservados.</small>
+                <a href="https://www.periodicos.capes.gov.br/index.php/termo-uso.html" class="ml-3 termo-uso">Termos de Uso</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Alerta para notificar o usuario sobre a politica de cookies -->
+      <div class="alert text-center cookie-alerta" role="alert">
+        Usamos cookies para fornecer uma melhor experiência ao usuário no acesso ao Portal de Periódicos da CAPES, conforme nossa <a href="https://www.periodicos.capes.gov.br/index.php/politica-cookies.html" class="link-alerta-cookies aceitar-cookies-conheca">política</a> e, ao continuar navegando, você concorda com essas condições.
+        <a class="btn btn-outline-light aceitar-cookies-entendi" href="https://www.periodicos.capes.gov.br/cookies-aceitar">
+          Entendi
+        </a>
+      </div>
+
+      <!-- footer -->
+      <footer class="row bg-padrao footer d-flex">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 co-sm-6 col-md-6 col-lg-8">
+              <a target="_blank" href="https://www.gov.br/acessoainformacao/pt-br">
+                <img src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/images/logo-acesso-a-informacao.png" height="36" alt="Acesso a Informação Governo Federal" width="150">
+              </a>
+              <a target="_blank" href="https://www.gov.br/capes/pt-br/acesso-a-informacao/sei">
+                <img class="px-md-4" src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/images/logo-sei.png" height="29" alt="Sei! CAPES" width="100">
+              </a>
+              <a target="_blank" href="https://falabr.cgu.gov.br/publico/Manifestacao/SelecionarTipoManifestacao.aspx?ReturnUrl=%2f">
+                <img src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/images/logo-fala-br.png" height="40" alt="Fala br Governo Federal" width="150">
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <a target="_blank" href="https://www.gov.br/capes/pt-br">
+                    <img class="img-fluid" src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/images/logo-capes.png" alt="Acesso a CAPES" width="100">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="back-top hide">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="12,2 22,22 2,22" fill="#1c1c5c"/>
+        </svg> Voltar ao topo
+      </div>
+    </div>
+    <script src="https://www.periodicos.capes.gov.br/templates/periodicos_v3/js/cookieAlerta.js"></script>
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSV7MH35Q7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DSV7MH35Q7');
+    </script>
+    <!-- Piwik
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://www.periodicos.capes.gov.br/webstats/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="https://www.periodicos.capes.gov.br/webstats/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    End Piwik Code -->
+  </body>
+</html>

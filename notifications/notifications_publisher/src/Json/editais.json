@@ -1,0 +1,131 @@
+
+{
+    "iniciacoes_cientificas": [
+      {
+        "id": 1,
+        "titulo": "Estudo sobre os efeitos da poluição no crescimento das plantas",
+        "orientador": "Dr. João Silva",
+        "aluno": "Maria Oliveira",
+        "instituicao": "Universidade de São Paulo",
+        "area_de_pesquisa": "Ecologia",
+        "inicio": "2023-03-01",
+        "fim": "2024-03-01",
+        "bolsa": {
+          "valor": 1500,
+          "tipo": "PIBIC",
+          "instituicao_bolsista": "CNPq"
+        },
+        "resultados_parciais": [
+          {
+            "data": "2023-06-01",
+            "resumo": "Análise preliminar dos dados de crescimento de plantas em ambientes com diferentes níveis de poluição. Resultados indicam diminuição da taxa de fotossíntese em áreas de maior poluição."
+          },
+          {
+            "data": "2023-11-01",
+            "resumo": "Conclusão da análise de impacto da poluição nos padrões de fotossíntese das plantas. Foi observado que espécies mais resistentes apresentam maior tolerância à poluição atmosférica."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Desenvolvimento de novos materiais para células solares",
+        "orientador": "Prof. Dr. Ana Costa",
+        "aluno": "Carlos Pereira",
+        "instituicao": "Universidade Estadual de Campinas",
+        "area_de_pesquisa": "Física e Materiais",
+        "inicio": "2023-08-15",
+        "fim": "2024-08-15",
+        "bolsa": {
+          "valor": 2000,
+          "tipo": "PIBIC",
+          "instituicao_bolsista": "CNPq"
+        },
+        "resultados_parciais": [
+          {
+            "data": "2023-10-30",
+            "resumo": "Desenvolvimento de um novo composto orgânico para uso em células solares fotovoltaicas. Testes iniciais mostram eficiência superior em comparação com materiais tradicionais."
+          },
+          {
+            "data": "2024-01-15",
+            "resumo": "Conclusão dos testes laboratoriais e início da otimização do composto para aumento da durabilidade e eficiência energética."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Impactos das mudanças climáticas na biodiversidade marinha",
+        "orientador": "Dr. Luiz Fernando",
+        "aluno": "Ana Santos",
+        "instituicao": "Universidade Federal do Rio de Janeiro",
+        "area_de_pesquisa": "Biologia Marinha",
+        "inicio": "2023-05-10",
+        "fim": "2024-05-10",
+        "bolsa": {
+          "valor": 1800,
+          "tipo": "PIBIC",
+          "instituicao_bolsista": "CNPq"
+        },
+        "resultados_parciais": [
+          {
+            "data": "2023-07-25",
+            "resumo": "Análise preliminar da diversidade de espécies marinhas em áreas costeiras afetadas pelo aumento da temperatura da água. Observou-se uma redução nas populações de corais e aumento de espécies invasoras."
+          },
+          {
+            "data": "2023-12-10",
+            "resumo": "Conclusão de análise sobre a migração de espécies marinhas. Espécies nativas estão sendo substituídas por espécies mais adaptadas ao aumento das temperaturas oceânicas."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "titulo": "Análise do uso de inteligência artificial para diagnóstico de doenças cardiovasculares",
+        "orientador": "Prof. Dr. Beatriz Martins",
+        "aluno": "Ricardo Lima",
+        "instituicao": "Universidade Estadual Paulista",
+        "area_de_pesquisa": "Inteligência Artificial e Saúde",
+        "inicio": "2023-02-20",
+        "fim": "2024-02-20",
+        "bolsa": {
+          "valor": 1700,
+          "tipo": "PIBIC",
+          "instituicao_bolsista": "CNPq"
+        },
+        "resultados_parciais": [
+          {
+            "data": "2023-06-15",
+            "resumo": "Desenvolvimento de um modelo de IA para análise de exames de imagem cardíaca. O modelo demonstrou alta precisão em identificar sinais iniciais de doenças cardíacas."
+          },
+          {
+            "data": "2023-10-01",
+            "resumo": "Aprimoramento do modelo de IA com base em novos dados. O desempenho melhorou, alcançando 95% de precisão na detecção de patologias cardíacas."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "titulo": "Estudo da genética de resistência a antibióticos em bactérias hospitalares",
+        "orientador": "Dr. Ricardo Almeida",
+        "aluno": "Juliana Souza",
+        "instituicao": "Universidade Federal de Minas Gerais",
+        "area_de_pesquisa": "Genética e Microbiologia",
+        "inicio": "2023-09-05",
+        "fim": "2024-09-05",
+        "bolsa": {
+          "valor": 1600,
+          "tipo": "PIBIC",
+          "instituicao_bolsista": "CNPq"
+        },
+        "resultados_parciais": [
+          {
+            "data": "2023-11-30",
+            "resumo": "Isolamento de novas linhagens de bactérias resistentes a antibióticos em unidades de terapia intensiva. Identificação de genes de resistência que podem ser transferidos entre bactérias."
+          },
+          {
+            "data": "2024-01-10",
+            "resumo": "Análise genética de novas linhagens resistentes. Detectados mutações em genes relacionados ao transporte de fármacos e à modificação de enzimas bacterianas."
+          }
+        ]
+      }
+    ]
+  }
+  
